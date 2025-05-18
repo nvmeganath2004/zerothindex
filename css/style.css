@@ -558,3 +558,44 @@ h6,
 /* .footer-about{
     margin-bottom:0!important;
 } */
+
+.vendor-arrow-left,
+.vendor-arrow-right {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.vendor-arrow-left:hover,
+.vendor-arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.vendor-arrow-left i,
+.vendor-arrow-right i {
+  font-size: 18px;
+  color: #333;
+}
+/* Vendor carousel logo alignment */
+.vendor-carousel .owl-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.vendor-carousel img {
+  max-height: 80px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+
