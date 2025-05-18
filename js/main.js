@@ -132,4 +132,29 @@ document.querySelectorAll('.nav-item.dropdown > a').forEach(function (link) {
         window.location = this.href;
     });
 });
+// Initialize carousel
+$('.vendor-carousel').owlCarousel({
+    loop: true,
+    margin: 35,
+    dots: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    responsive: {
+        0: { items: 2 },
+        576: { items: 4 },
+        768: { items: 6 },
+        992: { items: 8 }
+    }
+});
+
+// Arrow navigation via <div>
+$('.vendor-arrow-left').click(function () {
+    $('.vendor-carousel').trigger('prev.owl.carousel');
+});
+$('.vendor-arrow-right').click(function () {
+    $('.vendor-carousel').trigger('next.owl.carousel');
+});
+
+
+
 
